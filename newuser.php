@@ -39,17 +39,21 @@ if (isset($_POST['userName'], $_POST['userPassword'], $_POST['userPasswordRepeat
     <header>
         <nav class="navNewuser"><a href="/index.php" class="navLink">My Shopping List</a></nav>
     </header>
-    <main>
-        <form method="post" class="registerForm">
-            <label for="userName">Choose username:</label>
-            <input type="text" name="userName" id="userName" autocomplete="name" required>
-            <label for="userPassword">Choose password:</label>
-            <input type="password" name="userPassword" id="userPassword" required>
-            <label for="userPasswordRepeat">Repeat password:</label>
-            <input type="password" name="userPasswordRepeat" id="userPasswordRepeat" required>
-            <button type="submit" class="btn registerButton" name="register">Register</button>
-        </form>
-        <h3><?= $message; ?></h3>
+    <main class="mainNewUser">
+        <div class="mainDivNewUser">
+            <form method="post" class="registerForm">
+                <h3 class="gridHeader">Create new user:</h3>
+                <label for="userName">Choose username:</label>
+                <input type="text" name="userName" id="userName" autocomplete="name" required>
+                <label for="userPassword">Choose password:</label>
+                <input type="password" name="userPassword" id="userPassword" required>
+                <label for="userPasswordRepeat">Repeat password:</label>
+                <input type="password" name="userPasswordRepeat" id="userPasswordRepeat" required>
+                <button type="submit" class="btn registerButton" name="register">Register</button>
+            </form>
+            <h3><?= $message; ?></h3>
+            <a href="/index.php" class="aReturn">Return to login page</a>
+        </div>
     </main>
     <footer>
         <p>Henrik Andersen - 2023 - It's a bit of a picnic, in a tree. In a thunderstorm.</p>

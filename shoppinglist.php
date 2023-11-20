@@ -44,6 +44,11 @@ if (isset($_POST['logout'])) {
 
 <body>
     <header>
+        <nav class="loginNav">
+            <form method="post" class="loginForm">
+                <button type="submit" class="btn removeBtn btnLogout" name="logout">Log Out</button>
+            </form>
+        </nav>
         <h1>Here's your personal <span class="greenText">shopping list!</span></h1>
     </header>
     <main>
@@ -67,9 +72,6 @@ if (isset($_POST['logout'])) {
                 <button type="submit" class="btn addBtn">Add</button>
             </form>
         </div>
-        <form method="post">
-            <button type="submit" class="btn removeBtn btnLogout" name="logout">Log Out</button>
-        </form>
     </main>
     <footer>
         <p>Henrik Andersen - 2023 - It's a bit of a picnic, in a tree. In a thunderstorm.</p>
